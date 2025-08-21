@@ -6,7 +6,7 @@ const socialContent = [
   {
     platform: "instagram",
     type: "post",
-    image: "/api/placeholder/300/300",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop&crop=faces",
     likes: "127",
     comments: "23",
     caption: "Amazing energy at our Chennai meetup! 🚀"
@@ -14,7 +14,7 @@ const socialContent = [
   {
     platform: "linkedin",
     type: "article",
-    image: "/api/placeholder/300/200",
+    image: "https://images.unsplash.com/photo-1551818255-e6e10975cd17?w=300&h=200&fit=crop",
     likes: "89",
     comments: "15",
     caption: "How to Scale Your Startup: Key Insights from Our Members"
@@ -22,7 +22,7 @@ const socialContent = [
   {
     platform: "youtube",
     type: "video",
-    image: "/api/placeholder/300/200",
+    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=300&h=200&fit=crop",
     views: "2.1K",
     duration: "12:45",
     caption: "Entrepreneur Success Stories | GD Power House"
@@ -30,7 +30,7 @@ const socialContent = [
   {
     platform: "instagram",
     type: "story",
-    image: "/api/placeholder/300/400",
+    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=300&h=400&fit=crop",
     likes: "45",
     comments: "8",
     caption: "Behind the scenes from our workshop series 📈"
@@ -38,7 +38,7 @@ const socialContent = [
   {
     platform: "linkedin",
     type: "post",
-    image: "/api/placeholder/300/200",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop",
     likes: "156",
     comments: "32",
     caption: "Member Spotlight: Sarah's Journey to ₹10 Cr Revenue"
@@ -46,7 +46,7 @@ const socialContent = [
   {
     platform: "youtube",
     type: "shorts",
-    image: "/api/placeholder/300/400",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=400&fit=crop",
     views: "5.3K",
     duration: "0:58",
     caption: "60-Second Business Tip: Customer Retention Hack"
@@ -108,9 +108,11 @@ const SocialGlimpse = () => {
               >
                 {/* Content Image */}
                 <div className="relative aspect-square overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                    <PlatformIcon className="h-12 w-12 text-muted-foreground/50" />
-                  </div>
+                  <img
+                    src={content.image}
+                    alt={content.caption}
+                    className="w-full h-full object-cover"
+                  />
                   
                   {/* Platform Indicator */}
                   <div className="absolute top-3 left-3">

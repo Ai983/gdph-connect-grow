@@ -186,4 +186,26 @@ All colors MUST be HSL.
   .bg-orange-gradient {
     background: var(--orange-gradient);
   }
+  
+  /* Font utilities using design tokens */
+  .font-hero {
+    font-weight: var(--font-hero);
+  }
+  
+  .font-heading {
+    font-weight: var(--font-heading);
+  }
+  
+  .font-subheading {
+    font-weight: var(--font-subheading);
+  }
+  
+  .font-body {
+    font-weight: var(--font-body);
+  }
+  
+  /* Shadow utilities */
+  .shadow-orange {
+    box-shadow: var(--shadow-orange);
+  }
 }
