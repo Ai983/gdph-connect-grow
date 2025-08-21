@@ -6,23 +6,23 @@ const Journey = () => {
     {
       icon: Calendar,
       step: "01",
-      title: "Join & Connect",
-      description: "Sign up for GD Power House and attend your first meetup. Meet fellow entrepreneurs and start building your network.",
-      action: "Find Local Events"
+      title: "Arrive Uncertain",
+      description: "Many join us feeling isolated, overwhelmed by challenges, or unsure of their next steps in business.",
+      action: "Your Starting Point"
     },
     {
       icon: Users,
       step: "02", 
-      title: "Engage & Learn",
-      description: "Participate in workshops, mentorship programs, and collaborative projects. Share knowledge and learn from industry experts.",
-      action: "Browse Programs"
+      title: "Find Your Tribe",
+      description: "Through authentic connections and shared experiences, you discover you're not alone in this journey.",
+      action: "Connect Deeply"
     },
     {
       icon: Trophy,
       step: "03",
-      title: "Scale & Succeed",
-      description: "Leverage your network and new skills to grow your business. Access exclusive opportunities and partnerships.",
-      action: "View Success Stories"
+      title: "Transform Everything",
+      description: "With new perspectives, partnerships, and confidence, your business and life take on new meaning.",
+      action: "Experience Growth"
     }
   ];
 
@@ -30,9 +30,9 @@ const Journey = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="section-heading mb-4">Your Journey to Success</h2>
+          <h2 className="section-heading mb-4">The Emotional Journey</h2>
           <p className="section-subheading max-w-2xl mx-auto">
-            Three simple steps to transform your entrepreneurial journey and unlock new opportunities.
+            Every entrepreneur's path to success follows a similar emotional arc. Here's how our community guides that transformation.
           </p>
         </div>
         
@@ -88,16 +88,16 @@ const Journey = () => {
           <div className="text-center mt-16">
             <div className="bg-section p-8 rounded-2xl max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Ready to Start Your Journey?
+                Where Are You on This Journey?
               </h3>
               <p className="text-muted-foreground mb-6">
-                Join thousands of entrepreneurs who have already transformed their businesses through our community.
+                Whether you're just starting or ready to scale, our community meets you where you are.
               </p>
               <Button 
                 size="lg"
                 className="bg-orange-gradient hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl"
               >
-                Get Started Today
+                Discover Your Path
               </Button>
             </div>
           </div>

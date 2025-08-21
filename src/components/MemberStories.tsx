@@ -10,8 +10,8 @@ const MemberStories = () => {
       title: "Tech Startup Founder",
       company: "InnovateTech Solutions",
       image: sarahImage,
-      quote: "GD Power House transformed my approach to networking. The connections I've made here led to a $2M funding round and partnerships that are driving our growth.",
-      growth: "300% revenue increase",
+      quote: "What I found here wasn't just business advice—it was a mindset shift. The community challenged me to think bigger, act bolder, and believe in possibilities I never saw before.",
+      growth: "Mindset Transformation",
       rating: 5
     },
     {
@@ -19,8 +19,8 @@ const MemberStories = () => {
       title: "E-commerce Entrepreneur", 
       company: "EcoMarket Pro",
       image: davidImage,
-      quote: "The mentorship and learning opportunities at GD Power House are unmatched. I've gained insights that helped me scale from $100K to $1M in annual revenue.",
-      growth: "1000% revenue growth",
+      quote: "I came here feeling isolated as an entrepreneur. What I discovered was a family of people who understood the unique challenges I face. The emotional support changed everything.",
+      growth: "Found My Tribe",
       rating: 5
     },
     {
@@ -28,8 +28,8 @@ const MemberStories = () => {
       title: "Digital Marketing Agency Owner",
       company: "Growth Catalyst Digital",
       image: alexImage,
-      quote: "Being part of this community opened doors I never knew existed. The collaborative environment and shared knowledge accelerated my business beyond my expectations.",
-      growth: "50+ new clients",
+      quote: "The real magic happens in the conversations between sessions—where vulnerability meets opportunity. Those authentic connections sparked collaborations that changed everything.",
+      growth: "Authentic Connections",
       rating: 5
     }
   ];
@@ -38,10 +38,9 @@ const MemberStories = () => {
     <section className="py-20 bg-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="section-heading mb-4">Member Success Stories</h2>
+          <h2 className="section-heading mb-4">Community Experiences</h2>
           <p className="section-subheading max-w-2xl mx-auto">
-            Real entrepreneurs, real results. Discover how our community has helped 
-            members transform their businesses and achieve their goals.
+            Authentic voices from our community sharing how connections and experiences shaped their entrepreneurial journey.
           </p>
         </div>
         
@@ -99,24 +98,24 @@ const MemberStories = () => {
           {/* Additional Stats */}
           <div className="mt-16 bg-white rounded-2xl p-8 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-6">
-              Join Thousands of Successful Entrepreneurs
+              The Power of Shared Experience
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">4.9/5</div>
-                <div className="text-muted-foreground">Average Rating</div>
+                <div className="text-3xl font-bold text-primary mb-2">95%</div>
+                <div className="text-muted-foreground">Feel Deeply Understood</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                <div className="text-muted-foreground">Recommend Us</div>
+                <div className="text-3xl font-bold text-primary mb-2">88%</div>
+                <div className="text-muted-foreground">Form Lasting Friendships</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">92%</div>
+                <div className="text-muted-foreground">Gain New Perspectives</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">85%</div>
-                <div className="text-muted-foreground">Report Growth</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <div className="text-muted-foreground">Success Stories</div>
+                <div className="text-muted-foreground">Experience Breakthroughs</div>
               </div>
             </div>
           </div>

@@ -28,10 +28,19 @@ const Hero = () => {
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium opacity-95">
-            Join GD Power House, where ambitious entrepreneurs build lasting connections, 
-            learn from industry experts, and accelerate their business growth.
+          <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto font-medium opacity-95">
+            Find your place among tomorrow's leaders through transformative stories and shared experiences.
           </p>
+          
+          {/* Featured Story Highlight */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-8">
+            <p className="text-lg font-medium italic text-white/95 mb-3">
+              "In 18 months, my revenue grew 300% through the connections and insights I gained here."
+            </p>
+            <p className="text-white/80 text-sm">
+              — Sarah Mitchell, Tech Entrepreneur
+            </p>
+          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -39,7 +48,7 @@ const Hero = () => {
               size="lg" 
               className="bg-secondary hover:bg-secondary-light text-white px-8 py-4 text-lg font-semibold rounded-xl hover-lift"
             >
-              Join Our Community
+              Discover Stories
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
@@ -47,7 +56,7 @@ const Hero = () => {
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-xl"
             >
-              Learn More
+              Explore Community
             </Button>
           </div>
           
