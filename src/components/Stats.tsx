@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import React, { useState, useEffect, useRef } from 'react';
+import { Users, TrendingUp, Award, Target, IndianRupee, Calendar } from 'lucide-react';
 
 interface StatItemProps {
   number: number;
@@ -7,117 +8,117 @@ interface StatItemProps {
   delay?: number;
 }
 
-const StatItem = ({ number, label, suffix = "", delay = 0 }: StatItemProps) => {
+const StatItem: React.FC<StatItemProps> = ({ number, label, suffix = "", delay = 0 }) => {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isVisible) {
+            setIsVisible(true);
+          }
+        });
       },
-      { threshold: 0.1 }
+      { threshold: 0.5 }
     );
 
-    const element = document.getElementById(`stat-${label.replace(/\s+/g, '-').toLowerCase()}`);
-    if (element) observer.observe(element);
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
 
     return () => observer.disconnect();
-  }, [label]);
+  }, [isVisible]);
 
   useEffect(() => {
-    if (!isVisible) return;
+    if (isVisible) {
+      const timer = setTimeout(() => {
+        let start = 0;
+        const end = number;
+        const duration = 2500;
+        const stepTime = 50;
+        const steps = duration / stepTime;
+        const increment = end / steps;
 
-    const timer = setTimeout(() => {
-      const duration = 2000;
-      const steps = 60;
-      const increment = number / steps;
-      let current = 0;
+        const interval = setInterval(() => {
+          start += increment;
+          if (start >= end) {
+            setCount(end);
+            clearInterval(interval);
+          } else {
+            setCount(Math.floor(start));
+          }
+        }, stepTime);
 
-      const counter = setInterval(() => {
-        current += increment;
-        if (current >= number) {
-          setCount(number);
-          clearInterval(counter);
-        } else {
-          setCount(Math.floor(current));
-        }
-      }, duration / steps);
+        return () => clearInterval(interval);
+      }, delay);
 
-      return () => clearInterval(counter);
-    }, delay);
-
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    }
   }, [isVisible, number, delay]);
 
   return (
-    <div 
-      id={`stat-${label.replace(/\s+/g, '-').toLowerCase()}`}
-      className="text-center animate-counter-up"
-      style={{ animationDelay: `${delay}ms` }}
-    >
-      <div className="text-4xl md:text-6xl font-black text-primary mb-2">
+    <div ref={elementRef} className="text-center animate-counter-up">
+      <div className="text-5xl md:text-6xl font-hero text-secondary mb-3">
         {count.toLocaleString()}{suffix}
       </div>
-      <div className="text-lg md:text-xl text-muted-foreground font-medium">
-        {label}
-      </div>
+      <div className="text-xl text-white font-subheading">{label}</div>
     </div>
   );
 };
 
 const Stats = () => {
   return (
-    <section className="py-20 bg-section">
+    <section className="py-24 bg-primary-deep">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="section-heading mb-4">Stories of Impact</h2>
-          <p className="section-subheading max-w-2xl mx-auto">
-            Every number represents a breakthrough moment, a life changed, and a business transformed.
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-hero text-white mb-6">Impact by the Numbers</h2>
+          <p className="text-2xl text-white/90 max-w-4xl mx-auto font-subheading">
+            Social proof at a glance — real results from our growing community
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-          <StatItem 
-            number={2500} 
-            label="Growth Stories" 
-            suffix="+"
-            delay={0}
-          />
-          <StatItem 
-            number={150} 
-            label="Life-Changing Moments" 
-            delay={200}
-          />
-          <StatItem 
-            number={25} 
-            label="Dreams Realized" 
-            suffix="B+"
-            delay={400}
-          />
-          <StatItem 
-            number={50} 
-            label="Communities United" 
-            suffix="+"
-            delay={600}
-          />
+
+        {/* Animated Counter Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          <StatItem number={150} label="Members" suffix="+" delay={0} />
+          <StatItem number={75} label="Meetups" suffix="+" delay={300} />
+          <StatItem number={500} label="₹ Cr+ Collective Turnover" delay={600} />
         </div>
-        
-        {/* Additional Metrics */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover-lift">
-            <div className="text-2xl font-bold text-secondary mb-2">$2.5B+</div>
-            <div className="text-muted-foreground">In Member Business Value Created</div>
+
+        {/* Additional Impact Metrics */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-6xl mx-auto">
+          <div className="text-center">
+            <div className="bg-secondary/20 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <Users className="h-10 w-10 text-secondary" />
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">95%</div>
+            <div className="text-white/80">Active Participation</div>
           </div>
-          <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover-lift">
-            <div className="text-2xl font-bold text-secondary mb-2">85%</div>
-            <div className="text-muted-foreground">Report Breakthrough Moments</div>
+          
+          <div className="text-center">
+            <div className="bg-secondary/20 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <TrendingUp className="h-10 w-10 text-secondary" />
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">3.2×</div>
+            <div className="text-white/80">Average Growth</div>
           </div>
-          <div className="text-center p-6 bg-white rounded-2xl shadow-soft hover-lift">
-            <div className="text-2xl font-bold text-secondary mb-2">Global</div>
-            <div className="text-muted-foreground">Network of Changemakers</div>
+          
+          <div className="text-center">
+            <div className="bg-secondary/20 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <Award className="h-10 w-10 text-secondary" />
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">89%</div>
+            <div className="text-white/80">Success Rate</div>
+          </div>
+          
+          <div className="text-center">
+            <div className="bg-secondary/20 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <Target className="h-10 w-10 text-secondary" />
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">24</div>
+            <div className="text-white/80">Month Track Record</div>
           </div>
         </div>
       </div>

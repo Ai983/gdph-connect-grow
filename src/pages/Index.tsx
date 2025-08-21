@@ -1,24 +1,18 @@
 import Hero from "@/components/Hero";
-import FeaturedStories from "@/components/FeaturedStories";
 import Stats from "@/components/Stats";
+import MemberStoriesSnapshot from "@/components/MemberStoriesSnapshot";
 import Journey from "@/components/Journey";
-import Pillars from "@/components/Pillars";
-import MemberStories from "@/components/MemberStories";
-import StoriesByCategory from "@/components/StoriesByCategory";
-import JoinUs from "@/components/JoinUs";
+import SocialGlimpse from "@/components/SocialGlimpse";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
-      <FeaturedStories />
       <Stats />
+      <MemberStoriesSnapshot />
       <Journey />
-      <Pillars />
-      <MemberStories />
-      <StoriesByCategory />
-      <JoinUs />
+      <SocialGlimpse />
       <Footer />
     </div>
   );

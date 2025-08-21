@@ -1,98 +1,79 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Target, TrendingUp } from "lucide-react";
+import { ArrowRight, Zap, Users, Rocket } from "lucide-react";
 import heroImage from "@/assets/hero-entrepreneurs.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image with Blue Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Entrepreneurs networking and collaborating"
+          alt="High-energy entrepreneurs collaborating and networking"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/80"></div>
+        <div className="absolute inset-0 bg-primary/75"></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <div className="max-w-5xl mx-auto animate-fade-in-up">
-          {/* Main Headline */}
-          <h1 className="hero-headline mb-6">
-            Connect.
+        <div className="max-w-6xl mx-auto animate-fade-in-up">
+          {/* Main Headline - Bold & Concise */}
+          <h1 className="text-6xl md:text-8xl font-hero leading-tight mb-6 text-white">
+            Ignite Your Business
             <br />
-            <span className="text-secondary">Learn.</span>
-            <br />
-            Grow.
+            <span className="text-secondary font-hero">10× Over.</span>
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto font-medium opacity-95">
-            Find your place among tomorrow's leaders through transformative stories and shared experiences.
+          <p className="text-2xl md:text-3xl mb-8 max-w-4xl mx-auto font-subheading text-white/95">
+            Peer‑dreamers. Mentor‑builders. Growth‑catalysts.
           </p>
           
-          {/* Featured Story Highlight */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-8">
-            <p className="text-lg font-medium italic text-white/95 mb-3">
-              "In 18 months, my revenue grew 300% through the connections and insights I gained here."
-            </p>
-            <p className="text-white/80 text-sm">
-              — Sarah Mitchell, Tech Entrepreneur
-            </p>
-          </div>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          {/* Primary CTA - Bright Orange */}
+          <div className="mb-16">
             <Button 
               size="lg" 
-              className="bg-secondary hover:bg-secondary-light text-white px-8 py-4 text-lg font-semibold rounded-xl hover-lift"
+              className="bg-orange-gradient hover:bg-secondary-light text-white px-12 py-6 text-xl font-bold rounded-2xl hover-lift shadow-orange border-0"
             >
-              Discover Stories
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-xl"
-            >
-              Explore Community
+              Start Your Growth Journey
+              <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
           </div>
           
-          {/* Key Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center text-center animate-slide-in">
-              <div className="bg-white/20 p-4 rounded-full mb-4">
-                <Users className="h-8 w-8 text-white" />
+          {/* Value Proposition - Three Key Benefits */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift">
+              <div className="bg-secondary/20 p-6 rounded-full mb-6">
+                <Rocket className="h-10 w-10 text-secondary" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Connect</h3>
-              <p className="text-white/90">Build meaningful relationships with like-minded entrepreneurs</p>
+              <h3 className="text-2xl font-heading mb-4 text-white">10× Growth Mindset</h3>
+              <p className="text-white/90 text-lg">Transform your approach with exponential thinking</p>
             </div>
             
-            <div className="flex flex-col items-center text-center animate-slide-in" style={{ animationDelay: '0.2s' }}>
-              <div className="bg-white/20 p-4 rounded-full mb-4">
-                <Target className="h-8 w-8 text-white" />
+            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift" style={{ animationDelay: '0.2s' }}>
+              <div className="bg-secondary/20 p-6 rounded-full mb-6">
+                <Users className="h-10 w-10 text-secondary" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Learn</h3>
-              <p className="text-white/90">Access exclusive workshops and mentorship opportunities</p>
+              <h3 className="text-2xl font-heading mb-4 text-white">Peer Accountability</h3>
+              <p className="text-white/90 text-lg">Connect with driven entrepreneurs who push you forward</p>
             </div>
             
-            <div className="flex flex-col items-center text-center animate-slide-in" style={{ animationDelay: '0.4s' }}>
-              <div className="bg-white/20 p-4 rounded-full mb-4">
-                <TrendingUp className="h-8 w-8 text-white" />
+            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift" style={{ animationDelay: '0.4s' }}>
+              <div className="bg-secondary/20 p-6 rounded-full mb-6">
+                <Zap className="h-10 w-10 text-secondary" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Grow</h3>
-              <p className="text-white/90">Scale your business with proven strategies and support</p>
+              <h3 className="text-2xl font-heading mb-4 text-white">Structured Learning</h3>
+              <p className="text-white/90 text-lg">Proven frameworks that accelerate business growth</p>
             </div>
           </div>
         </div>
       </div>
       
-      {/* Scroll Indicator */}
+      {/* Enhanced Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-8 h-12 border-2 border-secondary/60 rounded-full flex justify-center cursor-pointer hover:border-secondary transition-colors">
+          <div className="w-2 h-4 bg-secondary/80 rounded-full mt-3 animate-pulse"></div>
         </div>
       </div>
     </section>
