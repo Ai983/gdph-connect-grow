@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="max-w-6xl mx-auto animate-fade-in-up">
           {/* Main Headline - Bold & Concise */}
           <h1 className="text-6xl md:text-8xl font-hero leading-tight mb-6 text-white">
-            Ignite Your Business
+            Empowering Businesses
             <br />
             <span className="text-secondary font-hero">10× Over.</span>
           </h1>
