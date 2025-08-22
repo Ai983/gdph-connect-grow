@@ -8,9 +8,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
-import OurStory from "./pages/OurStory";
-import OurReach from "./pages/OurReach";
-import OurImpact from "./pages/OurImpact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
