@@ -48,6 +48,27 @@ const Navigation = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      to="/about"
+                      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                    >
+                      About Us
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      to="/events"
+                      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                    >
+                      Events Showcase
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent">
                     Our Story
                   </NavigationMenuTrigger>
@@ -155,6 +176,21 @@ const Navigation = () => {
         {isOpen && (
           <div className="lg:hidden py-4 border-t border-border">
             <div className="space-y-4">
+              <Link
+                to="/about"
+                className="block font-semibold text-foreground"
+                onClick={() => setIsOpen(false)}
+              >
+                About Us
+              </Link>
+
+              <Link
+                to="/events"
+                className="block font-semibold text-foreground"
+                onClick={() => setIsOpen(false)}
+              >
+                Events Showcase
+              </Link>
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Our Story</h3>
                 <div className="space-y-2 pl-4">
