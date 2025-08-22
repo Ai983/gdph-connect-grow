@@ -11,6 +11,7 @@ import {
   MapPin,
   Send
 } from "lucide-react";
+import gdpLogo from "@/assets/gdp-logo-horizontal.png";
 
 const Footer = () => {
   const footerLinks = {
@@ -91,7 +92,13 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h2 className="text-2xl font-bold mb-4">GD Power House</h2>
+              <div className="flex items-center mb-4">
+                <img 
+                  src={gdpLogo} 
+                  alt="GDP PowerHouse Logo" 
+                  className="h-12 w-auto object-contain brightness-0 invert"
+                />
+              </div>
               <p className="text-gray-300 leading-relaxed mb-6">
                 Empowering entrepreneurs to connect, learn, and grow. Join our global 
                 community of ambitious business leaders transforming their industries.
@@ -201,7 +208,7 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 GD Power House. All rights reserved.
+              © 2024 GDP PowerHouse. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">

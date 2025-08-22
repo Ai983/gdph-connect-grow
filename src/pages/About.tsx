@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Lightbulb, HandHeart, TrendingUp, Calendar, MapPin, Crown } from "lucide-react";
+import gdpLogoHorizontal from "@/assets/gdp-logo-horizontal.png";
 
 const About = () => {
   const values = [
@@ -79,6 +80,13 @@ const About = () => {
       <section className="py-24 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8">
+              <img 
+                src={gdpLogoHorizontal} 
+                alt="GDP PowerHouse Logo" 
+                className="h-20 w-auto mx-auto mb-6 object-contain"
+              />
+            </div>
             <h1 className="text-5xl md:text-7xl font-hero text-primary mb-8">
               About Us
             </h1>
