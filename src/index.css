@@ -239,7 +239,7 @@ All colors MUST be HSL.
   }
   
   /* Mobile card spacing - comfortable margins */
-  .bg-white\\/10 {
+  [class*="bg-white/10"] {
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem;
