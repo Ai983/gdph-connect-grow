@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Users, Rocket } from "lucide-react";
 import heroImage from "@/assets/hero-background.jpeg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Blue Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="High-energy entrepreneurs collaborating and networking"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="High-energy entrepreneurs collaborating and networking" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/75"></div>
       </div>
       
@@ -19,7 +13,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-6xl mx-auto animate-fade-in-up">
           {/* Main Headline - Bold & Concise */}
-          <h1 className="text-6xl md:text-8xl font-hero leading-tight mb-6 text-white">
+          <h1 className="md:text-8xl font-hero leading-tight mb-6 text-white my-0 mx-0 px-0 text-5xl">
             Empowering Businesses
             <br />
             <span className="text-secondary font-hero">10× Over.</span>
@@ -31,11 +25,8 @@ const Hero = () => {
           </p>
           
           {/* Primary CTA - Bright Orange */}
-          <div className="mb-16">
-            <Button 
-              size="lg" 
-              className="bg-orange-gradient hover:bg-secondary-light text-white px-12 py-6 text-xl font-bold rounded-2xl hover-lift shadow-orange border-0"
-            >
+          <div className="mb-16 rounded-sm">
+            <Button size="lg" className="bg-orange-gradient hover:bg-secondary-light text-white text-xl font-bold rounded-2xl hover-lift shadow-orange border-0 px-0 py-[10px]">
               Start Your Growth Journey
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
@@ -51,7 +42,9 @@ const Hero = () => {
               <p className="text-white/90 text-lg">Transform your approach with exponential thinking</p>
             </div>
             
-            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift" style={{ animationDelay: '0.2s' }}>
+            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift" style={{
+            animationDelay: '0.2s'
+          }}>
               <div className="bg-secondary/20 p-6 rounded-full mb-6">
                 <Users className="h-10 w-10 text-secondary" />
               </div>
@@ -59,7 +52,9 @@ const Hero = () => {
               <p className="text-white/90 text-lg">Connect with driven entrepreneurs who push you forward</p>
             </div>
             
-            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col items-center text-center animate-slide-in bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover-lift" style={{
+            animationDelay: '0.4s'
+          }}>
               <div className="bg-secondary/20 p-6 rounded-full mb-6">
                 <Zap className="h-10 w-10 text-secondary" />
               </div>
@@ -76,8 +71,6 @@ const Hero = () => {
           <div className="w-2 h-4 bg-secondary/80 rounded-full mt-3 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
