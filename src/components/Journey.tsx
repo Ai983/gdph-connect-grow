@@ -73,7 +73,7 @@ const Journey = () => {
 
         {/* Final CTA Section */}
         <div className="bg-primary-deep p-16 rounded-3xl text-center">
-          <h3 className="text-4xl md:text-5xl font-hero text-white mb-6 mx-0 my-0">
+          <h3 className="text-4xl md:text-5xl font-hero text-white mb-6">
             Ready to Join the Next Wave of Entrepreneurs?
           </h3>
           <p className="text-xl text-white/90 mb-10 max-w-3xl mx-auto font-subheading">
