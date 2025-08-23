@@ -209,3 +209,84 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-orange);
   }
 }
+
+/* Mobile-First Optimizations (≤480px) */
+@media (max-width: 480px) {
+  /* Hero headline - smaller, centered text */
+  .hero-headline,
+  .text-6xl {
+    @apply text-4xl;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  /* Subheading adjustments */
+  .text-2xl {
+    @apply text-xl;
+  }
+  
+  .text-3xl {
+    @apply text-2xl;
+  }
+  
+  /* Container and card spacing */
+  .container {
+    @apply px-4;
+  }
+  
+  /* Mobile card spacing - comfortable margins */
+  .grid > div,
+  .bg-white\/10 {
+    @apply mx-4 px-4 py-6;
+  }
+  
+  /* CTA Button - 80% width, centered, minimum 44px height */
+  .btn-primary,
+  button[class*="bg-orange-gradient"] {
+    width: 80% !important;
+    min-height: 44px !important;
+    @apply mx-auto block px-6 py-4 text-lg;
+  }
+  
+  /* Button container centering */
+  .mb-16 {
+    @apply flex justify-center;
+  }
+  
+  /* Mobile grid adjustments */
+  .grid-cols-1.md\\:grid-cols-3 {
+    @apply gap-6;
+  }
+  
+  /* Value proposition cards mobile spacing */
+  .max-w-5xl {
+    @apply px-4;
+  }
+  
+  /* Scroll indicator positioning */
+  .bottom-8 {
+    @apply bottom-4;
+  }
+  
+  /* Mobile typography adjustments */
+  .text-xl {
+    @apply text-lg;
+  }
+  
+  .text-lg {
+    @apply text-base;
+  }
+  
+  /* Ensure proper padding for thumb reach */
+  .p-8 {
+    @apply p-4;
+  }
+  
+  .px-12 {
+    @apply px-6;
+  }
+  
+  .py-6 {
+    @apply py-4;
+  }
+}
