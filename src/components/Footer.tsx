@@ -93,7 +93,7 @@ const Footer = () => {
             <div className="mb-6">
               <div className="flex items-center mb-4">
                 <img 
-                  src= "/gdp-logo-circular.png"
+                  src= "src/assets/gdp-logo-circular.png"
                   alt="GDP PowerHouse Logo" 
                   className="h-12 w-auto object-contain brightness-0 invert"
                 />
