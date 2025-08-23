@@ -213,80 +213,84 @@ All colors MUST be HSL.
 /* Mobile-First Optimizations (≤480px) */
 @media (max-width: 480px) {
   /* Hero headline - smaller, centered text */
-  .hero-headline,
-  .text-6xl {
-    @apply text-4xl;
+  .hero-headline {
+    font-size: 2.25rem; /* text-4xl equivalent */
     text-align: center;
     line-height: 1.2;
   }
   
+  /* Override large text classes on mobile */
+  h1.text-6xl,
+  h1.md\\:text-8xl {
+    font-size: 2.25rem !important; /* text-4xl */
+    text-align: center;
+  }
+  
   /* Subheading adjustments */
-  .text-2xl {
-    @apply text-xl;
+  p.text-2xl,
+  p.md\\:text-3xl {
+    font-size: 1.25rem !important; /* text-xl */
   }
   
-  .text-3xl {
-    @apply text-2xl;
-  }
-  
-  /* Container and card spacing */
+  /* Container spacing */
   .container {
-    @apply px-4;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   /* Mobile card spacing - comfortable margins */
-  .grid > div,
-  .bg-white\/10 {
-    @apply mx-4 px-4 py-6;
+  .bg-white\\/10 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
   }
   
   /* CTA Button - 80% width, centered, minimum 44px height */
-  .btn-primary,
-  button[class*="bg-orange-gradient"] {
+  .bg-orange-gradient {
     width: 80% !important;
     min-height: 44px !important;
-    @apply mx-auto block px-6 py-4 text-lg;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem; /* text-lg */
   }
   
   /* Button container centering */
   .mb-16 {
-    @apply flex justify-center;
+    display: flex;
+    justify-content: center;
   }
   
   /* Mobile grid adjustments */
-  .grid-cols-1.md\\:grid-cols-3 {
-    @apply gap-6;
+  .grid.grid-cols-1.md\\:grid-cols-3 {
+    gap: 1.5rem;
   }
   
   /* Value proposition cards mobile spacing */
-  .max-w-5xl {
-    @apply px-4;
+  .max-w-5xl,
+  .max-w-6xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   /* Scroll indicator positioning */
   .bottom-8 {
-    @apply bottom-4;
-  }
-  
-  /* Mobile typography adjustments */
-  .text-xl {
-    @apply text-lg;
-  }
-  
-  .text-lg {
-    @apply text-base;
+    bottom: 1rem;
   }
   
   /* Ensure proper padding for thumb reach */
   .p-8 {
-    @apply p-4;
+    padding: 1rem;
   }
   
   .px-12 {
-    @apply px-6;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   
   .py-6 {
-    @apply py-4;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
