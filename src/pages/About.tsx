@@ -58,7 +58,7 @@ const About = () => {
     {
       year: "2023",
       title: "Growth & Celebrations",
-      description: "Achieved ₹800 Cr+ combined turnover and celebrated milestones together",
+      description: "Achieved ₹500 Cr+ combined turnover and celebrated milestones together",
       icon: Crown
     }
   ];
@@ -67,19 +67,19 @@ const About = () => {
     {
       name: "Saurabh Khandelwal",
       role: "Diamond Jewellery Visionary",
-      bio: "Founder of Dhanvi Diamonds, now 150+ stores across 7 states. Author of “Family Jeweller to Legacy Brand.” Bootstrapped from ₹25 lakh in 2006 to a leading North India brand.",
+      bio: "Saurabh is the Founder of Dhanvi Diamonds, a leading diamond jewelry brand. He broke away from his family’s traditional jewelry business to launch his own venture, which now spans 150+ stores across seven states. Saurabh is also the author of “Family Jeweller to Legacy Brand,” sharing insights from his entrepreneurial journey. Starting with just ₹25 lakh in 2006, he bootstrapped his business into a prominent name in North India’s jewelry industry.",
       image: "/placeholder.svg"
     },
     {
       name: "Narendra Surana", 
       role: "Industry Pioneer",
-      bio: "CEO of Shazia Basmati Rice (H.R. Exports Pvt. Ltd.). Built a global network in 80+ countries. Creator of the R.W.R. Framework boosting distributor profits by 30%. Oversees $200 M+ packaging, backed by 51 years of family legacy.",
+      bio: "Narendra is the Chairman of Sphinx Worldbiz Ltd., bringing 45 years of visionary leadership in design engineering and software development. Renowned for his dynamic approach, he has driven transformative growth across diverse industries. Known for his passion for innovation and excellence, Narendra has consistently achieved exceptional results – steering organizations to new heights of success. His guidance and experience make him a mentor figure within our chapter.",
       image: "/placeholder.svg"
     },
     {
       name: "Mohit Gupta",
       role: "Basmati Brand Builder",
-      bio: "Chairman of Sphinx Worldbiz Ltd. with 45 years in design engineering & software. A visionary leader known for innovation, driving transformative growth across industries and mentoring entrepreneurs.",
+      bio: "Mohit, CEO of Shazia Basmati Rice (H.R. Exports Pvt. Ltd.), is a global expert in Basmati rice marketing. He created the R.W.R. Framework to help rice distributors boost profitability by 30%, and has built a network across 80+ countries. With an MBA and over a decade of experience, Mohit now manages $200 million+ in annual packaging and offers high-end advisory services. His efforts are backed by 51 years of family trade legacy in the rice industry, making him a true innovator carrying his family’s torch forward.",
       image: "/placeholder.svg"
     }
   ];

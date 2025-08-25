@@ -210,7 +210,7 @@ const Events = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center scroll-animate">
-              <div className="text-5xl font-bold text-primary mb-4">30+</div>
+              <div className="text-5xl font-bold text-primary mb-4">150+</div>
               <div className="text-xl text-muted-foreground">Events Hosted</div>
             </div>
             <div className="text-center scroll-animate" style={{ animationDelay: '0.1s' }}>
@@ -218,11 +218,11 @@ const Events = () => {
               <div className="text-xl text-muted-foreground">Months of Growth</div>
             </div>
             <div className="text-center scroll-animate" style={{ animationDelay: '0.2s' }}>
-              <div className="text-5xl font-bold text-primary mb-4">200+</div>
+              <div className="text-5xl font-bold text-primary mb-4">500+</div>
               <div className="text-xl text-muted-foreground">Memories Created</div>
             </div>
             <div className="text-center scroll-animate" style={{ animationDelay: '0.3s' }}>
-              <div className="text-5xl font-bold text-secondary mb-4">₹800Cr+</div>
+              <div className="text-5xl font-bold text-secondary mb-4">₹500Cr+</div>
               <div className="text-xl text-muted-foreground">Combined Success</div>
             </div>
           </div>
