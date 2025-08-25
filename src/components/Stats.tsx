@@ -82,9 +82,9 @@ const Stats = () => {
 
         {/* Animated Counter Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-          <StatItem number={150} label="Members" suffix="+" delay={0} />
+          <StatItem number={30} label="Members" suffix="+" delay={0} />
           <StatItem number={75} label="Meetups" suffix="+" delay={300} />
-          <StatItem number={500} label="₹ Cr+ Collective Turnover" delay={600} />
+          <StatItem number={800} label="₹ Cr+ Collective Turnover" delay={600} />
         </div>
 
         {/* Additional Impact Metrics */}
@@ -117,7 +117,7 @@ const Stats = () => {
             <div className="bg-secondary/20 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
               <Target className="h-10 w-10 text-secondary" />
             </div>
-            <div className="text-3xl font-bold text-white mb-2">24</div>
+            <div className="text-3xl font-bold text-white mb-2">36</div>
             <div className="text-white/80">Month Track Record</div>
           </div>
         </div>
