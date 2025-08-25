@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const events = [
   {
     id: 1,
-    title: "Morning Session – Jaipur",
+    title: "Weekly Session",
     image: "/placeholder.svg",
     description: "Weekly power-packed morning sessions"
   },
@@ -18,20 +18,20 @@ const events = [
   },
   {
     id: 3,
-    title: "Growth Summit 2023",
-    image: "/placeholder.svg",
-    description: "Annual gathering of entrepreneurs"
+    title: "GDP - Celebration",
+    image: "/DSC09141 (1).jpg",
+    description: "GDP completing 3 years"
   },
   {
     id: 4,
-    title: "Holi Festival",
-    image: "/placeholder.svg",
-    description: "Colors of joy and celebration"
+    title: "Cultural Events",
+    image: "/DSC09154 (1).jpg",
+    description: "Networking and Fun"
   },
   {
     id: 5,
     title: "Business Retreat",
-    image: "/placeholder.svg",
+    image: "/DSC09182-min.JPG",
     description: "Strategic planning and bonding"
   }
 ];
