@@ -133,7 +133,7 @@ const OurEvents = () => {
             <div className="text-muted-foreground">Years of Growth</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">₹800Cr+</div>
+            <div className="text-4xl font-bold text-primary mb-2">₹500Cr+</div>
             <div className="text-muted-foreground">Combined Turnover</div>
           </div>
         </div>

@@ -7,38 +7,28 @@ const About = () => {
   const values = [
     {
       icon: HandHeart,
-      title: "Systems & Execution",
-      description: "Build scalable systems and execute with discipline"
+      title: "Collaboration",
+      description: "Together we achieve more than we ever could alone"
     },
     {
       icon: TrendingUp,
-      title: "10 Building Blocks",
-      description: "Strengthen every pillar of your business, step by step"
+      title: "Transformation",
+      description: "Continuous evolution and growth mindset"
     },
     {
       icon: Target,
-      title: "Dil Ki Baat",
-      description: "Share openly, connect deeply, and grow with trust."
+      title: "Implementation",
+      description: "Turning ideas into actionable results"
     },
     {
       icon: Users,
-      title: "Social Celebrations",
-      description: "Celebrate milestones and festivals like one big family"
+      title: "Peer Support",
+      description: "Accountability partners for your journey"
     },
     {
       icon: Lightbulb,
-      title: "Peer Coaching",
-      description: "Learn and teach through real experiences from fellow founders"
-    }
-    {
-      icon: Lightbulb,
-      title: "Buddies for Life",
-      description: "Accountability partners who always have your back"
-    }
-    {
-      icon: Lightbulb,
-      title: "Networking",
-      description: "Tap into a trusted circle to unlock opportunities and referrals"
+      title: "Growth",
+      description: "Exponential thinking for exponential results"
     }
   ];
 
@@ -66,20 +56,20 @@ const About = () => {
   const powermates = [
     {
       name: "Saurabh Khandelwal",
-      role: "Diamond Jewellery Visionary",
-      bio: "Saurabh is the Founder of Dhanvi Diamonds, a leading diamond jewelry brand. He broke away from his family’s traditional jewelry business to launch his own venture, which now spans 150+ stores across seven states. Saurabh is also the author of “Family Jeweller to Legacy Brand,” sharing insights from his entrepreneurial journey. Starting with just ₹25 lakh in 2006, he bootstrapped his business into a prominent name in North India’s jewelry industry.",
+      role: "Co-Founder & Visionary",
+      bio: "Leading entrepreneur with 15+ years experience in scaling businesses and mentoring growth-focused leaders.",
       image: "/placeholder.svg"
     },
     {
       name: "Narendra Surana", 
-      role: "Industry Pioneer",
-      bio: "Narendra is the Chairman of Sphinx Worldbiz Ltd., bringing 45 years of visionary leadership in design engineering and software development. Renowned for his dynamic approach, he has driven transformative growth across diverse industries. Known for his passion for innovation and excellence, Narendra has consistently achieved exceptional results – steering organizations to new heights of success. His guidance and experience make him a mentor figure within our chapter.",
+      role: "Co-Founder & Strategy",
+      bio: "Strategic business architect specializing in operational excellence and sustainable growth frameworks.",
       image: "/placeholder.svg"
     },
     {
       name: "Mohit Gupta",
-      role: "Basmati Brand Builder",
-      bio: "Mohit, CEO of Shazia Basmati Rice (H.R. Exports Pvt. Ltd.), is a global expert in Basmati rice marketing. He created the R.W.R. Framework to help rice distributors boost profitability by 30%, and has built a network across 80+ countries. With an MBA and over a decade of experience, Mohit now manages $200 million+ in annual packaging and offers high-end advisory services. His efforts are backed by 51 years of family trade legacy in the rice industry, making him a true innovator carrying his family’s torch forward.",
+      role: "Co-Founder & Innovation",
+      bio: "Innovation catalyst focused on technology integration and disruptive business model development.",
       image: "/placeholder.svg"
     }
   ];
@@ -101,7 +91,8 @@ const About = () => {
               About Us
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-              GDP Power House began with a simple idea: ambitious entrepreneurs grow faster together.
+              Empowering entrepreneurs to achieve 10× growth through peer learning, 
+              accountability, and proven frameworks since 2021.
             </p>
           </div>
         </div>
@@ -117,13 +108,17 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  In 2021, a group of like-minded business owners – all graduates of a rigorous business mentorship program – decided to continue their journey as a team. They formed GDP Power House as a dedicated forum to implement what they learned, share wins and failures, and push each other toward bigger goals. Over the last three years, this chapter has evolved into one of the most structured and consistent entrepreneur forums around – we’ve tried, failed, learned, and achieved significantly in that time, proving that any determined entrepreneur can reach new heights with the right support.
+                  Founded in 2021, GD Power House emerged as a revolutionary peer-to-peer 
+                  entrepreneurial hub with a bold mission: to transform how businesses grow 
+                  and entrepreneurs connect.
                 </p>
                 <p>
-                  Our realization: it’s not rocket science – you can replicate the same success, maybe faster or slower, but with us, the journey becomes easier.
+                  Our community has achieved remarkable success, with members generating 
+                  ₹500 Cr+ combined turnover through our proven frameworks and collaborative approach.
                 </p>
                 <p>
-                  What drives us is a 10× Growth Mindset and a spirit of collaboration. Every member is committed to continuous personal and professional growth, building systems that scale, and empowering others in the group. We believe in implementation over talk – ideas shared on Saturday shouldn’t stay on a notepad; they turn into action by Monday.
+                  We believe in the power of exponential thinking, structured learning, 
+                  and peer accountability to unlock unprecedented business growth.
                 </p>
               </div>
             </div>
@@ -151,7 +146,7 @@ const About = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">Support</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2">Accountability</h3>
                   <p className="text-muted-foreground">Peer support and commitment</p>
                 </CardContent>
               </Card>
@@ -168,7 +163,7 @@ const About = () => {
               Our Values & Beliefs
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Under the GDP umbrella – your growth, all in one place!
+              The core principles that guide everything we do and every relationship we build
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
