@@ -29,12 +29,12 @@ const About = () => {
       icon: Lightbulb,
       title: "Peer Coaching",
       description: "Learn and teach through real experiences from fellow founders"
-    }
+    },
     {
       icon: Lightbulb,
       title: "Buddies for Life",
       description: "Accountability partners who always have your back"
-    }
+    },
     {
       icon: Lightbulb,
       title: "Networking",
