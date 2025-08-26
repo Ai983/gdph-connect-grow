@@ -25,65 +25,65 @@ const Events = () => {
   const eventPhotos = [
     {
       id: 1,
-      title: "Morning Session – Jaipur",
+      title: "Weekly Morning Session",
       category: "Weekly Sessions",
-      image: "/placeholder.svg",
+      image: "/1J0A5038.JPG",
       year: "2023"
     },
     {
       id: 2,
       title: "Diwali Celebration",
       category: "Festivals",
-      image: "/placeholder.svg", 
+      image: "/IMG_6089.jpg", 
       year: "2022"
     },
     {
       id: 3,
       title: "Growth Summit",
       category: "Annual Events",
-      image: "/placeholder.svg",
+      image: "/DSC09141.jpg",
       year: "2023"
     },
     {
       id: 4,
       title: "Team Building Retreat",
       category: "Retreats",
-      image: "/placeholder.svg",
+      image: "/DSC09154.jpg",
       year: "2022"
     },
     {
       id: 5,
-      title: "Holi Festival",
-      category: "Festivals",
-      image: "/placeholder.svg",
+      title: "Ashayein",
+      category: "Cultural Events",
+      image: "/aashayein.JPG",
       year: "2023"
     },
     {
       id: 6,
       title: "Strategic Planning Session",
       category: "Business",
-      image: "/placeholder.svg",
+      image: "/1J0A5038.JPG",
       year: "2021"
     },
     {
       id: 7,
       title: "Dussehra Celebration",
       category: "Festivals",
-      image: "/placeholder.svg",
+      image: "/IMG_5934.jpg",
       year: "2022"
     },
     {
       id: 8,
-      title: "Innovation Workshop",
-      category: "Workshops",
-      image: "/placeholder.svg",
+      title: "Social Wellness",
+      category: "Cultural Events",
+      image: "/DSC_6452.JPG",
       year: "2023"
     },
     {
       id: 9,
       title: "Networking Dinner",
       category: "Networking",
-      image: "/placeholder.svg",
+      image: "/IMG_20230304_184711_501.jpg",
       year: "2023"
     }
   ];
