@@ -94,7 +94,7 @@ const Events = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/90">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg')] bg-cover bg-center opacity-30 animate-pulse"></div>
+          <div className="absolute inset-0 bg-[url('/IMG_3915.mp4')] bg-cover bg-center opacity-30 animate-pulse"></div>
         </div>
         
         <div className="relative z-10 text-center text-white px-6">
