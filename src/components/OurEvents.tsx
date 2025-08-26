@@ -7,25 +7,25 @@ const events = [
   {
     id: 1,
     title: "Weekly Session",
-    image: "/placeholder.svg",
+    image: "/GDPmeet.JPG",
     description: "Weekly power-packed morning sessions"
   },
   {
     id: 2,
     title: "Diwali Celebration",
-    image: "/placeholder.svg", 
+    image: "/IMG_5751.jpg", 
     description: "Festival of lights with our powermates"
   },
   {
     id: 3,
     title: "GDP - Celebration",
-    image: "/DSC09141 (1).jpg",
+    image: "/DSC09222.jpg",
     description: "GDP completing 3 years"
   },
   {
     id: 4,
     title: "Cultural Events",
-    image: "/DSC09154 (1).jpg",
+    image: "/aashayein1.JPG",
     description: "Networking and Fun"
   },
   {
