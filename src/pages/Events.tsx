@@ -62,7 +62,7 @@ const Events = () => {
       id: 6,
       title: "Strategic Planning Session",
       category: "Business",
-      image: "/1J0A5038.JPG",
+      image: "/meeting.jpeg",
       year: "2021"
     },
     {
@@ -94,7 +94,7 @@ const Events = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/90">
-          <div className="absolute inset-0 bg-[url('/IMG_3915.mp4')] bg-cover bg-center opacity-30 animate-pulse"></div>
+          <div className="absolute inset-0 bg-[url('/about.jpeg')] bg-cover bg-center opacity-30 animate-pulse"></div>
         </div>
         
         <div className="relative z-10 text-center text-white px-6">
@@ -105,7 +105,7 @@ const Events = () => {
           </h1>
           <p className="text-2xl md:text-3xl mb-12 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
             A visual journey through our memories, milestones, and moments that matter
-          </p>
+          </p> 
         </div>
 
         {/* Scroll Indicator */}

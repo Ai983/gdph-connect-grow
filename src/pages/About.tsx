@@ -68,19 +68,19 @@ const About = () => {
       name: "Saurabh Khandelwal",
       role: "Diamond Jewellery Visionary",
       bio: "Founder of Dhanvi Diamonds, now 150+ stores across 7 states. Author of “Family Jeweller to Legacy Brand.” Bootstrapped from ₹25 lakh in 2006 to a leading North India brand.",
-      image: "/placeholder.svg"
+      image: "/saurabh.jpeg"
     },
     {
       name: "Narendra Surana", 
       role: "Industry Pioneer",
       bio: "CEO of Shazia Basmati Rice (H.R. Exports Pvt. Ltd.). Built a global network in 80+ countries. Creator of the R.W.R. Framework boosting distributor profits by 30%. Oversees $200 M+ packaging, backed by 51 years of family legacy.",
-      image: "/placeholder.svg"
+      image: "/narendra.jpeg"
     },
     {
       name: "Mohit Gupta",
       role: "Basmati Brand Builder",
       bio: "Chairman of Sphinx Worldbiz Ltd. with 45 years in design engineering & software. A visionary leader known for innovation, driving transformative growth across industries and mentoring entrepreneurs.",
-      image: "/placeholder.svg"
+      image: "/mohit.jpeg"
     }
   ];
 
